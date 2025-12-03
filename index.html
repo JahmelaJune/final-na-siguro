@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar hidden" id="navbar">
+        <div class="nav-container">
+            <div class="logo">MY PORTFOLIO</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Animated Background Flowers -->
+    <div class="flower" style="top: 10%; left: 10%; animation-delay: 0s;"></div>
+    <div class="flower" style="top: 20%; right: 15%; animation-delay: 2s;"></div>
+    <div class="flower" style="bottom: 15%; left: 20%; animation-delay: 4s;"></div>
+    <div class="flower" style="top: 60%; right: 10%; animation-delay: 6s;"></div>
+    <div class="flower" style="bottom: 30%; left: 50%; animation-delay: 3s;"></div>
+
+    <!-- Login Page -->
+    <div class="login-container" id="loginPage">
+        <!-- 3D Animation Video Background -->
+        <video class="video-background" autoplay muted loop playsinline>
+            <source src="087b9931d0a5650f806206abae49231f.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <div class="login-box">
+            <h2>Welcome</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+                <div class="login-options">
+                    <a href="#" class="login-link" id="forgotPasswordLink">Forgot Password?</a>
+                    <a href="#" class="login-link" id="signupLink">Sign Up</a>
+                </div>
+            </form>
+            <p class="error-message" id="errorMessage"></p>
+            <p class="success-message" id="successMessage"></p>
+        </div>
+    </div>
+
+    <!-- Signup Page -->
+    <div class="login-container hidden" id="signupPage">
+        <!-- 3D Animation Video Background -->
+        <video class="video-background" autoplay muted loop playsinline>
+            <source src="61ec7a62-7783-4ae0-b6a9-61fe63e67ff3.jpg" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <div class="login-box">
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <div class="input-group">
+                    <label for="signupUsername">Username</label>
+                    <input type="text" id="signupUsername" required>
+                </div>
+                <div class="input-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" required>
+                </div>
+                <div class="input-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" required>
+                </div>
+                <div class="input-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" required>
+                </div>
+                <button type="submit" class="login-btn">Create Account</button>
+                <div class="login-options">
+                    <a href="#" class="login-link" id="backToLoginFromSignup">Back to Login</a>
+                </div>
+            </form>
+            <p class="error-message" id="signupErrorMessage"></p>
+        </div>
+    </div>
+
+    <!-- Forgot Password Page -->
+    <div class="login-container hidden" id="forgotPasswordPage">
+        <!-- 3D Animation Video Background -->
+        <video class="video-background" autoplay muted loop playsinline>
+            <source src="c:\Users\User-PC\Documents\New folder\087b9931d0a5650f806206abae49231f.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <div class="login-box">
+            <h2>Reset Password</h2>
+            <form id="forgotPasswordForm">
+                <div class="input-group">
+                    <label for="resetEmail">Email Address</label>
+                    <input type="email" id="resetEmail" required>
+                </div>
+                <button type="submit" class="login-btn">Send Reset Link</button>
+                <div class="login-options">
+                    <a href="#" class="login-link" id="backToLoginFromForgot">Back to Login</a>
+                </div>
+            </form>
+            <p class="success-message" id="forgotSuccessMessage"></p>
+        </div>
+    </div>
+
+    <!-- Portfolio Content -->
+    <div class="portfolio-content" id="portfolioContent">
+        <!-- Home Section -->
+        <section id="home" class="section">
+            <div class="portfolio-header">
+                <img src="https://i.ibb.co/pB2dxVH5/61ec7a62-7783-4ae0-b6a9-61fe63e67ff3.jpg" alt="Profile Picture" class="profile-image">
+                <h1>Jahmela June Palaganas</h1>
+                <p>Bachelor of Science Information Technology</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="info-card">
+                <div class="info-section">
+                    <h3>About Me</h3>
+                    <p>Hello! I'm a passionate web developer with a love for creating beautiful and functional websites. I specialize in front-end development and enjoy bringing creative ideas to life through code.</p>
+                </div>
+
+                <div class="info-section">
+                    <h3>Skills</h3>
+                    <p>HTML, CSS, JavaScript, Python, Java</p>
+                </div>
+
+                <!-- Gallery Section -->
+                <div class="info-section">
+                    <h3>Gallery</h3>
+                    <div class="gallery">
+                        <div class="gallery-item">
+                            <img src="ad1fd8cf-3ec3-4004-809d-abe970aff8a0.jpg" alt="Gallery Image 1">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="d830de72-3495-4203-9f28-1828f8359571.jpg" alt="Gallery Image 2">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="de05b118-143a-4f3f-95b8-f3879638a201.jpg" alt="Gallery Image 3">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="081228cf-9983-48c9-9c78-98802fd0e676.jpg" alt="Gallery Image 4">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="67adebb2-e3b2-46c4-bba8-a2d4d9c20239.jpg" alt="Gallery Image 5">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="660cdf85-adef-420b-adf6-f540afdb0fc3.jpg" alt="Gallery Image 6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="info-card">
+                <div class="info-section">
+                    <h3>Contact</h3>
+                    <p>Email: jahmelajune.palaganas@csucc.edu.ph<br>
+                    Location: Cabadbaran, Agusan Del Norte<br>
+                    Phone: 09940172332</p>
+                </div>
+
+                <button class="logout-btn" id="logoutBtn">Logout</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer with Social Icons -->
+    <footer class="footer" id="footer">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/jahmjun.gonzalez" target="_blank" class="social-link">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/jahmzie_june?igsh=MWNldmE0Yno3Z2U3eA==" target="_blank" class="social-link">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:jahmelajune@gmail.com" class="social-link">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="tel:09940172332" class="social-link">
+                <i class="fas fa-phone"></i>
+            </a>
+        </div>
+        <p>&copy; 2025 Jahmela June. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
